@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen">
+            <input type="text" id="output" value="" disabled>
+            <button class="operator" onclick="clearOutput()">C</button>
+        </div>
+        <div class="buttons">
+            <button onclick="appendInput(9)">9</button>
+            <button onclick="appendInput(8)">8</button>
+            <button onclick="appendInput(7)">7</button>
+            <button onclick="appendInput('+')">+</button>
+            <button onclick="appendInput(4)">4</button>
+            <button onclick="appendInput(5)">5</button>
+            <button onclick="appendInput(6)">6</button>
+            <button onclick="appendInput('-')">-</button>
+            <button onclick="appendInput(1)">1</button>
+            <button onclick="appendInput(2)">2</button>
+            <button onclick="appendInput(3)">3</button>
+            <button onclick="appendInput('*')">*</button>
+            <button onclick="appendInput(0)">0</button>
+            <button onclick="appendInput('.')">.</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="appendInput('/')">/</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
